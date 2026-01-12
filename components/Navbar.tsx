@@ -25,8 +25,9 @@ const Navbar: React.FC = () => {
   const navItems: NavItem[] = [
     { label: 'Inicio', href: isHome ? '#home' : '/' },
     { label: 'Servicios', href: getHref('#services') },
-    { label: 'Nosotros', href: getHref('#about') },
-    { label: 'Contacto', href: getHref('#contact') },
+    { label: 'Nosotros', href: '/nosotros' },
+    { label: 'Equipo', href: '/equipo' },
+    { label: 'Contacto', href: '/contacto' },
   ];
 
   const handleNavClick = (href: string) => {
@@ -80,10 +81,14 @@ const Navbar: React.FC = () => {
                 <Link
                   key={item.label}
                   to={item.href}
-                  className="text-gray-300 hover:text-brand transition-colors duration-300 text-sm font-medium tracking-wider uppercase relative group"
+                  className={`text-sm font-medium tracking-wider uppercase relative group transition-colors duration-300 ${
+                    location.pathname === item.href ? 'text-brand' : 'text-gray-300 hover:text-brand'
+                  }`}
                 >
                   {item.label}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand transition-all duration-300 group-hover:w-full"></span>
+                  <span className={`absolute -bottom-1 left-0 h-0.5 bg-brand transition-all duration-300 ${
+                    location.pathname === item.href ? 'w-full' : 'w-0 group-hover:w-full'
+                  }`}></span>
                 </Link>
               );
             })}
@@ -126,7 +131,9 @@ const Navbar: React.FC = () => {
                   key={item.label}
                   to={item.href}
                   onClick={() => setIsOpen(false)}
-                  className="block px-3 py-2 text-base font-medium text-gray-300 hover:text-brand hover:bg-white/5 rounded-md transition-colors"
+                  className={`block px-3 py-2 text-base font-medium hover:bg-white/5 rounded-md transition-colors ${
+                     location.pathname === item.href ? 'text-brand' : 'text-gray-300 hover:text-brand'
+                  }`}
                 >
                   {item.label}
                 </Link>

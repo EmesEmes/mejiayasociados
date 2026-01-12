@@ -1,11 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 
 const About: React.FC = () => {
   const { elementRef, isVisible } = useIntersectionObserver();
 
   return (
-    <section id="about" className="py-24 bg-dark-900 overflow-hidden">
+    <section className="py-24 bg-dark-900 overflow-hidden border-t border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-16">
           
@@ -26,15 +28,25 @@ const About: React.FC = () => {
               Entendemos que detrás de cada caso hay una historia y una necesidad humana o empresarial. Por eso, nuestra prioridad es brindar tranquilidad a través de estrategias legales sólidas y transparentes.
             </p>
             
-            <div className="grid grid-cols-2 gap-8 border-t border-white/10 pt-8">
-              <div>
-                <span className="block text-4xl font-bold text-white mb-1">+15</span>
-                <span className="text-sm text-gray-500 uppercase tracking-wide">Años de Experiencia</span>
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8 border-t border-white/10 pt-8">
+              <div className="grid grid-cols-2 gap-8 w-full sm:w-auto">
+                <div>
+                  <span className="block text-4xl font-bold text-white mb-1">+15</span>
+                  <span className="text-sm text-gray-500 uppercase tracking-wide">Años de Experiencia</span>
+                </div>
+                <div>
+                  <span className="block text-4xl font-bold text-white mb-1">+500</span>
+                  <span className="text-sm text-gray-500 uppercase tracking-wide">Casos Exitosos</span>
+                </div>
               </div>
-              <div>
-                <span className="block text-4xl font-bold text-white mb-1">+500</span>
-                <span className="text-sm text-gray-500 uppercase tracking-wide">Casos Exitosos</span>
-              </div>
+              
+              <Link 
+                to="/nosotros" 
+                className="inline-flex items-center text-brand font-bold hover:text-white transition-colors group mt-4 sm:mt-0"
+              >
+                Conozca nuestra historia
+                <ArrowRight className="ml-2 w-5 h-5 transform group-hover:translate-x-1 transition-transform" />
+              </Link>
             </div>
           </div>
 

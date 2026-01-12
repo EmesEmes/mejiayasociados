@@ -8,6 +8,7 @@ export interface ServiceItem {
   icon: LucideIcon;
   features: string[];
   benefits: string[];
+  highlight?: boolean;
 }
 
 export interface NavItem {
@@ -21,4 +22,13 @@ export interface ContactFormData {
   email: string;
   phone: string;
   message: string;
+}
+
+export interface TeamMember {
+  id: string;
+  name: string;
+  role: string;
+  bio: string;
+  specializations: string[];
+  imageUrl: string;
 }

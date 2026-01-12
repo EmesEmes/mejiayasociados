@@ -28,14 +28,19 @@ const Footer: React.FC = () => {
         
         <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
           <p>© {new Date().getFullYear()} Mejía & Asociados. Todos los derechos reservados.</p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-white transition-colors">Política de Privacidad</a>
-            <a href="#" className="hover:text-white transition-colors">Términos de Uso</a>
-          </div>
         </div>
-        <p className="text-center text-xs text-gray-600 mt-8">
-          Diseñado en Quito, Ecuador.
-        </p>
+        
+        <div className="flex flex-col items-center justify-center mt-8 text-xs text-gray-600 gap-2">
+          
+          <a 
+            href="https://www.linkedin.com/in/emilio-del-hierro-368b66243/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="flex items-center gap-1"
+          >
+            <span>Desarrollado por <span className="text-gray-400 hover:text-brand transition-colors font-medium">Emilio del Hierro</span></span>
+          </a>
+        </div>
       </div>
     </footer>
   );
