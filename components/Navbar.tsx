@@ -48,13 +48,9 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <Link to="/" className="flex items-center gap-2 group">
-              <div className="p-2 bg-gradient-to-tr from-brand-dark to-brand rounded-lg group-hover:shadow-[0_0_15px_rgba(127,255,212,0.5)] transition-shadow duration-300">
-                <Scale className="h-6 w-6 text-dark-900" />
-              </div>
-              <span className="ml-2 text-xl font-serif font-bold text-white tracking-wide">
-                Mejía <span className="text-brand">&</span> Asociados
-              </span>
+            <Link to="/" className="flex items-center gap-2">
+              <img src="/logo.png" alt="logo" className="w-16"/>
+              <span className="text-xl">MEJÍA & ASOCIADOS</span>
             </Link>
           </div>
 

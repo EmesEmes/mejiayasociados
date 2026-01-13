@@ -121,7 +121,7 @@ const Hero: React.FC = () => {
             Defendemos <br/>
             <span className="relative">
               <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-400">
-                Su Futuro
+                Tu Futuro
               </span>
               <span className="absolute -inset-1 blur-2xl bg-brand/10 -z-10"></span>
             </span>
@@ -133,7 +133,7 @@ const Hero: React.FC = () => {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <a 
-              href="#contact" 
+              href="/contacto" 
               className="px-10 py-4 bg-brand text-dark-900 font-bold tracking-wide rounded-sm hover:bg-brand-light transition-all duration-300 shadow-[0_0_20px_rgba(127,255,212,0.2)] hover:shadow-[0_0_30px_rgba(127,255,212,0.4)] flex items-center gap-2 group"
             >
               Consulta Gratuita

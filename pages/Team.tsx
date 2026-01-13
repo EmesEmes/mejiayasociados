@@ -63,15 +63,6 @@ const Team: React.FC = () => {
                     ))}
                   </div>
                 </div>
-
-                <div className="flex gap-4 mt-auto border-t border-white/5 pt-4">
-                  <a href="#" className="text-gray-500 hover:text-brand transition-colors">
-                    <Linkedin className="w-5 h-5" />
-                  </a>
-                  <a href="#" className="text-gray-500 hover:text-brand transition-colors">
-                    <Mail className="w-5 h-5" />
-                  </a>
-                </div>
               </div>
             </div>
           ))}

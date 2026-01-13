@@ -1,5 +1,5 @@
 import React from 'react';
-import { Scale, Linkedin, Facebook, Twitter } from 'lucide-react';
+import { Instagram, Linkedin, Facebook, Twitter } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -7,21 +7,15 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
           <div className="flex items-center gap-2 mb-4 md:mb-0">
-            <Scale className="h-6 w-6 text-brand" />
+            <img src="/logo.png" alt="logo" className="w-10"/>
             <span className="text-xl font-serif font-bold text-white tracking-wide">
               Mejía <span className="text-brand">&</span> Asociados
             </span>
           </div>
           
           <div className="flex space-x-6">
-            <a href="#" className="text-gray-400 hover:text-brand transition-colors">
-              <Linkedin className="w-5 h-5" />
-            </a>
-            <a href="#" className="text-gray-400 hover:text-brand transition-colors">
-              <Facebook className="w-5 h-5" />
-            </a>
-            <a href="#" className="text-gray-400 hover:text-brand transition-colors">
-              <Twitter className="w-5 h-5" />
+            <a href="https://www.instagram.com/mejia_asociados_?igsh=MWE3Z3BzMXZhdm9uYQ==" className="text-gray-400 hover:text-brand transition-colors">
+              <Instagram className="w-5 h-5" />
             </a>
           </div>
         </div>

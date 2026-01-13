@@ -77,14 +77,20 @@ const About: React.FC = () => {
                     <Users className="w-12 h-12 opacity-50" />
                  </div>
                  {/* Replace src with actual image of José David Mejía Silva */}
-                 <img src="/2.webp" alt="José David Mejía Silva" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500 grayscale group-hover:grayscale-0" />
+                 <img src="/josedavidmejia.webp" alt="José David Mejía Silva" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500 grayscale group-hover:grayscale-0" />
               </div>
             </div>
             <div className="w-full md:w-2/3">
               <h3 className="text-brand font-medium tracking-widest uppercase text-sm mb-2">Fundador y Director</h3>
               <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-6">José David Mejía Silva</h2>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                Abogado especializado en Derecho Penal y Derecho Constitucional, cuya práctica se centra en el análisis de la tipicidad penal, el dolo y la culpa, el debido proceso, la proporcionalidad de la intervención punitiva del Estado y el control constitucional de los actos públicos y judiciales.
+                José David Mejía Silva es abogado especializado en Derecho Penal y Derecho Constitucional, Magíster en Derecho Penal por la Universidad Andina Simón Bolívar – Ecuador, y graduado como abogado en la Universidad Internacional SEK.
+              </p>
+              <p className="text-gray-300 text-lg leading-relaxed mb-6">
+                Es fundador y director del Estudio Jurídico Mejía & Asociados, desde donde lidera la asesoría y defensa legal con un enfoque estratégico, personalizado y riguroso, entendiendo que cada caso es único y requiere un análisis jurídico individualizado, profundo y responsable.
+              </p>
+              <p className="text-gray-300 text-lg leading-relaxed mb-6">
+                Su ejercicio profesional se fundamenta en la convicción de que todo proceso legal puede y debe conducirse con honestidad, excelencia y absoluta transparencia, demostrando que es posible ejercer el derecho sin corrupción. Bajo esta filosofía, brinda un acompañamiento cercano al cliente, diseñando soluciones jurídicas a la medida, con estricto apego a la Constitución, el debido proceso y la ética profesional.
               </p>
               <div className="h-px w-24 bg-brand/50"></div>
             </div>

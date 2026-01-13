@@ -30,23 +30,15 @@ const About: React.FC = () => {
             
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8 border-t border-white/10 pt-8">
               <div className="grid grid-cols-2 gap-8 w-full sm:w-auto">
-                <div>
-                  <span className="block text-4xl font-bold text-white mb-1">+15</span>
-                  <span className="text-sm text-gray-500 uppercase tracking-wide">Años de Experiencia</span>
-                </div>
-                <div>
-                  <span className="block text-4xl font-bold text-white mb-1">+500</span>
-                  <span className="text-sm text-gray-500 uppercase tracking-wide">Casos Exitosos</span>
-                </div>
-              </div>
-              
-              <Link 
+                <Link 
                 to="/nosotros" 
                 className="inline-flex items-center text-brand font-bold hover:text-white transition-colors group mt-4 sm:mt-0"
               >
                 Conozca nuestra historia
                 <ArrowRight className="ml-2 w-5 h-5 transform group-hover:translate-x-1 transition-transform" />
               </Link>
+              </div>
+              
             </div>
           </div>
 
@@ -54,9 +46,9 @@ const About: React.FC = () => {
             <div className="relative z-10 rounded-sm overflow-hidden border border-white/10">
                {/* Using placeholder as requested in guidelines */}
               <img 
-                src="https://picsum.photos/800/600" 
+                src="/viejoyelmar.jpeg" 
                 alt="Oficina moderna en Quito" 
-                className="w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-700 transform hover:scale-105"
+                className="w-full h-auto object-cover  hover:grayscale-0 transition-all duration-700 transform hover:scale-105"
               />
             </div>
             {/* Decorative element */}

@@ -56,8 +56,8 @@ const ContactPage: React.FC = () => {
                 <div>
                   <h4 className="text-white font-bold mb-2 text-lg">Dirección</h4>
                   <p className="text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors">
-                    Av. Amazonas y Naciones Unidas<br/>
-                    Edificio La Previsora, Oficina 102<br/>
+                    Av. Doce de Octubre y Francisco Salazar<br/>
+                    Edificio Concorde<br/>
                     Quito, Ecuador
                   </p>
                 </div>
@@ -69,8 +69,7 @@ const ContactPage: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-white font-bold mb-2 text-lg">Teléfonos</h4>
-                  <p className="text-gray-400 group-hover:text-gray-300 transition-colors">+593 2 123 4567</p>
-                  <p className="text-gray-400 group-hover:text-gray-300 transition-colors">+593 9 876 5432</p>
+                  <p className="text-gray-400 group-hover:text-gray-300 transition-colors">099 0784 892</p>
                 </div>
               </div>
 
@@ -80,7 +79,7 @@ const ContactPage: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-white font-bold mb-2 text-lg">Email</h4>
-                  <p className="text-gray-400 group-hover:text-gray-300 transition-colors">contacto@mejiayasociados.com</p>
+                  <p className="text-gray-400 group-hover:text-gray-300 transition-colors">davidmejia2702@gmail.com</p>
                 </div>
               </div>
 
@@ -94,15 +93,6 @@ const ContactPage: React.FC = () => {
                   <p className="text-gray-400 group-hover:text-gray-300 transition-colors">Sábados: Previa cita</p>
                 </div>
               </div>
-            </div>
-
-            {/* Map Placeholder */}
-            <div className="mt-12 w-full h-64 bg-dark-800 rounded-sm border border-white/10 overflow-hidden relative grayscale hover:grayscale-0 transition-all duration-500">
-              {/* This represents a map embed */}
-               <div className="absolute inset-0 flex items-center justify-center bg-white/5">
-                 <span className="text-gray-500 text-sm uppercase tracking-widest">Mapa de Ubicación</span>
-               </div>
-               <img src="https://picsum.photos/800/400?grayscale" className="w-full h-full object-cover opacity-50" alt="Mapa" />
             </div>
           </div>
 
